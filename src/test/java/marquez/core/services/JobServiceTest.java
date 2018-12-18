@@ -29,7 +29,6 @@ import marquez.dao.RunArgsDAO;
 import org.jdbi.v3.core.statement.UnableToExecuteStatementException;
 import org.junit.After;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 
@@ -41,12 +40,7 @@ public class JobServiceTest {
   private static final RunArgsDAO runArgsDAO = mock(RunArgsDAO.class);
   private static final UUID namespaceID = UUID.randomUUID();
 
-  JobService jobService;
-
-  @Before
-  public void setUp() {
-    jobService = new JobService(jobDAO, jobVersionDAO, jobRunDAO, runArgsDAO);
-  }
+  JobService jobService = new JobService(jobDAO, jobVersionDAO, jobRunDAO, runArgsDAO);
 
   @After
   public void tearDown() {
