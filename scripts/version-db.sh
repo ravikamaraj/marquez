@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-# A utility script for flyway script versioning. The resulting migartion
-# sql script V<timestamp>__<description>.sql will be under the directory
-# src/main/resources/db/migration.
+# A utility script for versioning database migrations. The resulting migration
+# script V<timestamp>__<description>.sql will be under the directory
+# src/main/resources/db/migration (ex: V20181231221546323003__initial_version.sql)
 #
 # Usage: $ ./version-db.sh <description>
 
