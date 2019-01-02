@@ -1,8 +1,8 @@
 #!/bin/bash
 #
 # A utility script for versioning database migrations. The resulting migration
-# script V<timestamp>__<Description>.sql (ex: V20181231221546323003__Create_owners_table.sql)
-# will be found under the directory src/main/resources/db/migration.
+# script V<timestamp>__<description>.sql (ex: V20181231221546323003__Create_owners_table.sql)
+# will be found under the folder src/main/resources/db/migration.
 #
 # Usage: $ ./version-db.sh <description>
 #
