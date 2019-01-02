@@ -6,9 +6,9 @@
 #
 # Usage: $ ./version-db.sh <description>
 #
-# Note: Do NOT modify previous migration files. The checksum of each file is stored
-#       in the flyway_schema_history table and used to track the state of the
-#       database (see: https://flywaydb.org).
+# Note: Do NOT modify previous migration scripts. The checksum of each script
+#       is stored in the flyway_schema_history table and used to track the state
+#       of the database (see: https://flywaydb.org).
 
 set -eu
 
